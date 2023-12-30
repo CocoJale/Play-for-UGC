@@ -1,35 +1,29 @@
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
-
-while true do wait()
+while true do
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
+wait()
 end
 
-while true do wait(1)
+while true do
 local args = {
     [1] = 1500
 }
 game:GetService("ReplicatedStorage").Events.ForServer.UpdQuest4:FireServer(unpack(args))
+wait(1)
 end
 
-while true do wait(1)
+while true do
 local args = {
     [1] = "Freeze",
     [2] = 500
 }
 game:GetService("ReplicatedStorage").Events.ForServer.TaskProgress:FireServer(unpack(args))
+wait(1)
 end
 
-while true do wait(1)
+while true do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.PlayerGui.Main.Menus.SpinFrame.SpinWheel
 }
 game:GetService("ReplicatedStorage").Events.ForServer.AttemptSpin:FireServer(unpack(args))
-end
-
-while true do wait(1)
-local args = {
-    [1] = "Click",
-    [2] = 1500
-}
-game:GetService("ReplicatedStorage").Events.ForServer.TaskProgress:FireServer(unpack(args))
+wait(1)
 end
