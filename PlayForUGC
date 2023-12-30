@@ -14,8 +14,9 @@ end
 while true do
 local args = {
     [1] = "Freeze",
-    [2] = 500
+    [2] = 1000
 }
+
 game:GetService("ReplicatedStorage").Events.ForServer.TaskProgress:FireServer(unpack(args))
 wait(1)
 end
