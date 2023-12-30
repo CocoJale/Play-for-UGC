@@ -19,11 +19,3 @@ local args = {
 game:GetService("ReplicatedStorage").Events.ForServer.TaskProgress:FireServer(unpack(args))
 wait(1)
 end
-
-while true do
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.PlayerGui.Main.Menus.SpinFrame.SpinWheel
-}
-game:GetService("ReplicatedStorage").Events.ForServer.AttemptSpin:FireServer(unpack(args))
-wait(1)
-end
