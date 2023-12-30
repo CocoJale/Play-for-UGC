@@ -1,3 +1,5 @@
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+
 while true do wait()
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 end
